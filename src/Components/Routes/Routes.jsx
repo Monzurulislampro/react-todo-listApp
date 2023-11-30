@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import HomePage from "../Pages/Home/HomePage";
+import CreateTodo from "../../Components/Home/Todo/CreateTodo"
   const router = createBrowserRouter([
     {
         path: "/",
@@ -11,8 +12,8 @@ import HomePage from "../Pages/Home/HomePage";
                 element: <HomePage></HomePage>
             },
             {
-                path: "/about",
-                element: <h1>Hello about Page</h1>
+                path: "/create",
+                element: <CreateTodo></CreateTodo>
             },
             {
                 path: "/services",
